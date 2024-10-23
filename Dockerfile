@@ -25,6 +25,7 @@ WORKDIR /app
 # Copy only the production-ready files from the previous stage
 COPY --from=build /app/package.json /app/yarn.lock ./
 COPY --from=build /app/.next ./.next
+COPY --from=build /app/data/posts /app/data/posts
 COPY --from=build /app/public ./public
 COPY --from=build /app/node_modules ./node_modules
 
