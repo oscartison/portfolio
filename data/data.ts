@@ -1,93 +1,62 @@
 export const companies = [
   {
-    title: 'Nalikes Studio',
-    alt: 'NS image',
-    role: 'Senior Software Engineer',
-    skills: ['web3', 'nextjs', 'rails', 'typescript', 'react', 'aws', 'heroku'],
-    period: '2023 - Present',
-    logo: '/assets/images/logos/nalikes-studio.png'
+    title: 'esri BeLux',
+    alt: 'esri',
+    role: 'GIS Developer',
+    skills: ['GIS', 'React', 'Python', 'ArcPy', 'Docker', 'Azure', 'IIS'],
+    period: '2024 - Present',
+    logo: '/assets/images/logos/esri.png'
   },
   {
-    title: 'Big Wolf Games',
-    alt: 'BW image',
-    role: 'Senior Software Engineer',
-    skills: ['ruby', 'rails', 'typescript', 'react', 'pixi', 'aws', 'heroku', 'serverless'],
-    period: '2021 - 2023',
-    logo: '/assets/images/logos/bigwolf.png'
+    title: 'RSC Anderlecht',
+    alt: 'rsca',
+    role: 'Coach U6-U7',
+    skills: ['coaching', 'football'],
+    period: '2024 - Present',
+    logo: '/assets/images/logos/rsca.jpg'
   },
   {
-    title: 'Phaedra Solutions',
-    alt: 'PS image',
-    role: 'Senior Software Engineer',
-    skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
-    period: '2019 - 2021',
-    logo: '/assets/images/logos/phaedra.jpeg'
+    title: 'Agentschap Binnenlands Bestuur',
+    alt: 'ABB',
+    role: 'Open Source Developer (consultant from Codifly)',
+    skills: ['Python', 'Virtuoso', 'Ember', 'javascript', 'nginx', 'Linked Open Data'],
+    period: '2024',
+    logo: '/assets/images/logos/abb.jpeg'
   },
   {
-    title: 'Brainx Technologies',
-    alt: 'BT image',
-    role: 'Software Engineer',
-    skills: ['ruby', 'rails', 'javascript', 'python'],
-    period: '2018 - 2019',
-    logo: '/assets/images/logos/brainxtech.png'
+    title: 'Codifly',
+    alt: 'Codifly',
+    role: 'Full Stack Developer',
+    skills: ['SQL', 'postgres', 'TypeScript', 'React', 'AWS', 'Docker', 'Terraform'],
+    period: '2022 - 2024',
+    logo: '/assets/images/logos/codifly.png'
   },
-  // {
-  //   title: "Codenya Studio",
-  //   alt: "CS image",
-  //   role: "Co-founder, CTO",
-  //   skills: ["ruby", "rails", "python", "typescript", "react", "aws"],
-  //   period: "2018 - Present",
-  //   logo: '/assets/images/logos/codenya.png'
-  // },
+
   {
-    title: 'Brainplow',
-    alt: 'Brainplow image',
-    role: 'Software Engineer',
-    skills: ['javascript', 'python', 'angular'],
-    period: '2017 - 2018',
-    logo: '/assets/images/logos/brainplow.jpg'
+    title: 'my innovation center.brussels',
+    alt: 'MIC',
+    role: 'Full Stack Developer Intern',
+    skills: ['javascript', 'python', 'react', 'django', 'azure'],
+    period: '2022',
+    logo: '/assets/images/logos/myinnovationcenter.webp'
   }
 ];
 
 export const institutes = [
   {
-    short_title: 'FAST - NUCES',
-    title: 'National University of Computer and Emerging Sciences',
+    short_title: 'HE2B - ESI',
+    title: 'Haute école de Bruxelles-Brabant',
     alt: 'Nuces image',
     role: "Bachelor's Degree in Computer Science",
     skills: ['project management', 'web development', 'data structures'],
-    period: '2013 - 2017',
-    startingYear: '2013',
-    logo: '/assets/images/logos/fast.png',
-    awards: [
-      {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'May 1, 2015'
-      },
-      {
-        title: 'Silver Medal',
-        description:
-          'This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.',
-        date: 'May 1, 2014'
-      },
-      {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'Nov 1, 2013'
-      }
-    ]
+    period: '2019 - 2022',
+    startingYear: '2019',
+    logo: '/assets/images/logos/he2b.jpg',
+    awards: []
   }
 ];
 
 export const skillsArray = [
-  {
-    name: 'Ruby on Rails',
-    description: 'Web development',
-    link: 'https://rubyonrails.org/',
-    type: 'development',
-    image: '/assets/images/skills/rails.png'
-  },
   {
     name: 'React',
     description: 'Web development',
@@ -95,13 +64,7 @@ export const skillsArray = [
     type: 'development',
     image: '/assets/images/skills/react.png'
   },
-  {
-    name: 'Ruby',
-    description: 'Web development, scrapping',
-    link: 'https://www.ruby-lang.org/en/',
-    type: 'development',
-    image: '/assets/images/skills/ruby.png'
-  },
+
   {
     name: 'Python',
     description: 'Web development, scrapping',
@@ -115,6 +78,13 @@ export const skillsArray = [
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     type: 'development',
     image: '/assets/images/skills/javascript.png'
+  },
+  {
+    name: '.Net',
+    description: 'C# development',
+    link: 'https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet',
+    type: 'development',
+    image: '/assets/images/skills/dotnet.png'
   },
   {
     name: 'Typescript',
@@ -158,20 +128,7 @@ export const skillsArray = [
     type: 'database',
     image: '/assets/images/skills/mysql.png'
   },
-  {
-    name: 'Redis',
-    description: 'Database',
-    link: 'https://redis.io/',
-    type: 'database',
-    image: '/assets/images/skills/redis.png'
-  },
-  {
-    name: 'Heroku',
-    description: 'Devops',
-    link: 'https://www.heroku.com/',
-    type: 'devops',
-    image: '/assets/images/skills/heroku.png'
-  },
+
   {
     name: 'AWS',
     description: 'Devops',
@@ -180,12 +137,20 @@ export const skillsArray = [
     image: 'assets/images/skills/aws.png'
   },
   {
-    name: 'Digital Ocean',
-    description: 'Devops',
-    link: 'https://www.digitalocean.com/',
+    name: 'Docker',
+    description: 'Containerization',
+    link: 'https://www.docker.com/products/docker-desktop/',
     type: 'devops',
-    image: '/assets/images/skills/digital-ocean.png'
+    image: 'assets/images/skills/docker.png'
   },
+  {
+    name: 'Unix',
+    description: 'Server',
+    link: 'https://www.linux.org',
+    type: 'devops',
+    image: '/assets/images/skills/linux.webp'
+  },
+
   {
     name: 'Nginx',
     description: 'Web server',
@@ -199,13 +164,6 @@ export const skillsArray = [
     link: 'https://code.visualstudio.com/',
     type: 'development',
     image: '/assets/images/skills/vscode.png'
-  },
-  {
-    name: 'Figma',
-    description: 'Collaborative Design',
-    link: 'https://www.figma.com/',
-    type: 'design',
-    image: '/assets/images/skills/figma.png'
   }
 ];
 

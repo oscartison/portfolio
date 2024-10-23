@@ -2,7 +2,6 @@ import * as React from 'react';
 import { IconButton, Box, Flex } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { AnimatePresence } from 'framer-motion';
-import { IconType } from 'react-icons/lib/cjs';
 import { MotionImage } from '../shared/animations/motion';
 
 const variants = {
@@ -34,7 +33,8 @@ const swipePower = (offset: number, velocity: number) => {
 interface BtnProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: any;
-  as: IconType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  as: any;
   isRight: boolean;
   right?: string;
   left?: string;

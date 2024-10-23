@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   Box,
-  Image,
   useColorModeValue,
   VStack,
   Text,
@@ -9,12 +8,6 @@ import {
   HStack,
   Tag,
   Icon,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalBody,
-  Center,
   Flex,
   Tooltip
 } from '@chakra-ui/react';
@@ -40,12 +33,7 @@ interface RepositoryCardProps {
 
 const RepositoryCard = (props: RepositoryCardProps) => {
   const { title, cover, blurHash, technologies, url, stars } = props;
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const linkColor = useLinkColor();
-
-  const handleClick = () => {
-    onOpen();
-  };
 
   const handleLinkClick = (e: React.MouseEvent<HTMLParagraphElement, MouseEvent>, link: string) => {
     window.open(link);
@@ -70,7 +58,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
 
   return (
     <CardTransition>
-      <Box onClick={handleClick} cursor="pointer">
+      <Box onClick={(e) => handleLinkClick(e, url)} cursor="pointer">
         <VStack
           rounded="xl"
           borderWidth="1px"
@@ -137,16 +125,6 @@ const RepositoryCard = (props: RepositoryCardProps) => {
             </Flex>
           </VStack>
         </VStack>
-        <Modal isOpen={isOpen} onClose={onClose} isCentered allowPinchZoom>
-          <ModalOverlay />
-          <ModalContent bg="none" maxW={'28rem'} w="auto">
-            <ModalBody p={0} rounded="lg" overflow="hidden" bg="none">
-              <Center>
-                <Image src={cover} rounded="lg" alt="Repo image" />
-              </Center>
-            </ModalBody>
-          </ModalContent>
-        </Modal>
       </Box>
     </CardTransition>
   );

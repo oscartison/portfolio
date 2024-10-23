@@ -2,49 +2,43 @@ import {
   FaGithub,
   FaDev,
   FaLinkedin,
-  FaQuora,
-  FaTwitter
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} Oscar Tison. All Rights Reserved.`,
   author: {
-    name: "Muhammad Ahmad",
+    name: "oscar.tison",
     accounts: [
       {
-        url: "https://github.com/MA-Ahmad",
+        url: "https://github.com/oscartison",
         label: "Github Account",
         type: "gray",
         icon: <FaGithub />
       },
       {
-        url: "https://twitter.com/muhammad_ahmaad",
+        url: "https://x.com/oscarsca__",
         label: "Twitter Account",
         type: "twitter",
-        icon: <FaTwitter />
+        icon: <FaXTwitter />
       },
       {
-        url: "https://dev.to/m_ahmad",
+        url: "https://dev.to/oscartison",
         label: "Dev Account",
         type: "gray",
         icon: <FaDev />
       },
       {
-        url: "https://linkedin.com/in/muhammad-ahmad20",
+        url: "https://linkedin.com/in/oscartison",
         label: "LinkedIn Account",
         type: "linkedin",
         icon: <FaLinkedin />
       },
+      
       {
-        url: "https://www.quora.com/profile/Muhammad-Ahmad-66",
-        label: "Quora Account",
-        type: "red",
-        icon: <FaQuora />
-      },
-      {
-        url: "mailto:muhammad.ahmad8043@gmail.com",
-        label: "Mail ahmad",
+        url: "mailto:oscar@tison.consulting",
+        label: "Mail Oscar",
         type: "gray",
         icon: <FiMail />
       }

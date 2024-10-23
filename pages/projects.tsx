@@ -1,25 +1,25 @@
-import { Fragment } from 'react'
-import { NextPage } from 'next'
-import { VStack, Text, useColorModeValue } from '@chakra-ui/react'
-import { projectsList } from '../data/projectData'
-import PageLayout from 'components/layouts/pageLayout'
-import { PageSlideFade } from 'components/shared/animations/page-transitions'
-import Header from 'components/shared/header'
+import { Fragment } from 'react';
+import { NextPage } from 'next';
+import { VStack, Text, useColorModeValue } from '@chakra-ui/react';
+import { projectsList } from '../data/projectData';
+import PageLayout from 'components/layouts/pageLayout';
+import { PageSlideFade } from 'components/shared/animations/page-transitions';
+import Header from 'components/shared/header';
 import {
   LeftProjectLayoutLarge,
   ProjectLayoutMed,
-  RightProjectLayoutLarge,
-} from 'components/layouts/projectLayout'
-import { ProjectProps } from 'interfaces/interface'
+  RightProjectLayoutLarge
+} from 'components/layouts/projectLayout';
+import { ProjectProps } from 'interfaces/interface';
 
-const title = 'Projects 📚'
+const title = 'Projects 📚';
 const subtitle =
-  "A selection of projects I've worked on, during my career as a software developer."
+  "A selection of personal projects I'm working on. Professional projects are not included in this list.";
 
-const TURQUOISE = '#06b6d4'
+const TURQUOISE = '#06b6d4';
 
 const Projects: NextPage<ProjectProps> = (props) => {
-  const { projects } = props
+  const { projects } = props;
 
   return (
     <Fragment>
@@ -29,10 +29,7 @@ const Projects: NextPage<ProjectProps> = (props) => {
             <Header underlineColor={TURQUOISE} mt={0} mb={2}>
               Projects
             </Header>
-            <Text
-              color={useColorModeValue('gray.500', 'gray.200')}
-              textAlign="left"
-            >
+            <Text color={useColorModeValue('gray.500', 'gray.200')} textAlign="left">
               {subtitle}
             </Text>
           </VStack>
@@ -51,15 +48,15 @@ const Projects: NextPage<ProjectProps> = (props) => {
         </PageSlideFade>
       </PageLayout>
     </Fragment>
-  )
-}
+  );
+};
 
 export function getStaticProps() {
   return {
     props: {
-      projects: projectsList,
-    },
-  }
+      projects: projectsList
+    }
+  };
 }
 
-export default Projects
+export default Projects;
