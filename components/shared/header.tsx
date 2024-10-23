@@ -1,13 +1,12 @@
 import { Box, BoxProps } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
-import UnderlinedText from './underlined-text';
 
 interface Props extends BoxProps {
   underlineColor?: string;
   emoji?: string;
 }
 
-const Header = ({ underlineColor, emoji, ...props }: PropsWithChildren<Props>) => (
+const Header = ({ emoji, ...props }: PropsWithChildren<Props>) => (
   <Box
     as="h1"
     mt={10}
