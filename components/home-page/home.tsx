@@ -25,7 +25,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
   }, [emojiCounter]);
 
   return (
-    <Flex direction="column" align="center" minH="calc(100vh - 15rem)">
+    <Flex direction="column" align="center" minH="calc(100vh - 15rem)" maxW="calc(100vw - 2rem)">
       <Flex direction={['column', 'column', 'row']}>
         <MotionBox
           opacity="0"
